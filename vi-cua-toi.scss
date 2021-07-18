@@ -499,66 +499,184 @@ a {
     }
 }
 
-body {
-}
-
-
-// Css modal
 .modal {
-    position: absolute;
-    background-color: #fff;
-    width: 600px;
-    border-radius: 3px;
-    opacity: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 700;
+    background: rgba(202, 202, 202, 0.7);
     visibility: hidden;
-    transition: all 0.3 ease-in-out;
+    display: none;
+    opacity: 0;
+    overflow-y: scroll;
+
+    &.active {
+        visibility: visible;
+        display: block;
+        opacity: 1;
+    }
 
     &-wrapper {
         position: relative;
-        width: 100%;
-        height: 100%;
+        width: 40%;
+        background: white;
+        box-shadow: 0 0 20px 1px gray;
+        border-radius: 10px;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+      
+        
+        &.small {
+            width: 40%;
+        }
+
+        &.medium {
+            width: 60%;
+        }
+
+        &.large {
+            width: 80%;
+        }
     }
 
-    &-overlay {
-        background: rgba(206, 202, 202, 0.8);
+    &-header {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: gray;
+
+            &:hover {
+                color: black;
+                transition: 0.3s ease-in-out;
+            }
+        }
+      
+    }
+
+    &-content {
+        padding: 20px 20px;
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+
+        &.active {
+            visibility: visible;
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+
+#shareWalletContent {
+    .header {
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    .email, .message {
+        display: flex;
+        padding: 10px 0px;
+        border-top: 1px solid gray;
+        img {
+            margin-right: 10px;
+            height: 25px;
+            width: 25px;
+        }
+        input, textarea {
+            width: 100%;
+            font-size: 16px;
+            padding: 5px 0px;
+            border: none;
+        }
+    }
+    .button-wrapper {
+        padding: 10px 0px;
+        text-align: right;
+        .btn {
+            color: #2db84c;
+            font-weight: bold;
+            padding: 10px 35px;
+            margin-left: 10px;
+            border: none;
+            cursor: pointer;
+            background: rgba(26, 163, 51, 0.2);
+
+            &:hover {
+                background: rgba(26, 163, 51, 0.3);
+            }
+        }
+    }
+}
+
+#transferMoneyContent {
+    color: rgba(0,0,0,.54);
+    .header {
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+   
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 0px;
+    }
+
+    .group {
+        display: flex;
         width: 100%;
-        height: 100%;
-        position: fixed;
-        z-index: 600;
-        top: 0;
-        left: 0;
+
+        .item {
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(209, 205, 205);
+            width: 33.33%;
+            border-radius: 5px;
+
+            &-note {
+                width: 100%;
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 14px;
+                    margin-right: 5px 0px;
+                    border: none;
+                }
+            }
+
+            &-content {
+                display: flex;
+                padding: 5px 0px;
+                img {
+                    margin-right: 5px;
+                    height: 30px;
+                    width: 30px;
+                }
+                .right-chevron {
+                    height: 15px;
+                    width: 15px;
+                }
+                .right {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                }
+
+                input.money{
+                    padding: 5px 0px;
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
     }
-    
-    .close-modal {
-      position: absolute;
-      cursor: pointer;
-      top: 5px;
-      right: 15px;
-      opacity: 0;
-      backface-visibility: hidden;
-      transition: 0.3 ease-in-out;
-    }
-    
-    .modal-content {
-      opacity: 0;
-      backface-visibility: hidden;
-      transition: 0.3 ease-in-out;
-    }
-    
-    // &.active {
-    //   visibility: visible;
-    //   opacity: 1;
-    //   transform: scale(1);
-      
-    //   .modal-content {
-    //     opacity: 1;
-    //   }
-      
-    //   .close-modal {
-    //     transform: translateY(10px);
-    //     opacity: 1;
-    //   }
-    // }
-  }
+}

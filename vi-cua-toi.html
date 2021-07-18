@@ -244,9 +244,9 @@
                                 </div>
                                 <div class="share">
                                     <ul>
-                                        <li>Chia sẻ ví</li>
-                                        <li>Chuyển tiền</li>
-                                        <li>Điều chỉnh số dư</li>
+                                        <li id="share-wallet">Chia sẻ ví</li>
+                                        <li id="transfer-money">Chuyển tiền</li>
+                                        <li id="adjust-money">Điều chỉnh số dư</li>
                                     </ul>
                                 </div>
                             </div>
@@ -255,24 +255,127 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="modal active">
+        <div class="modal-wrapper small">
+            <div class="modal-header">
+                <a class="close-modal"> x </a>
+            </div>
+            <div id="shareWalletContent" class="modal-content">
+                <div class="header">Chia sẻ ví</div>
+                <div class="email">
+                    <img src="./assets/email.svg" alt="email">
+                    <input type="text" placeholder="Email của mọi người mà bạn muốn chia sẻ">
+                </div>
+                <div class="message">
+                    <img src="./assets/message.svg" alt="">
+                    <textarea rows="5" placeholder="Tin nhắn"></textarea>
+                </div>
+                <div class="button-wrapper">
+                    <button class="btn btn-cancel">Hủy</button>
+                    <button class="btn btn-save">Xong</button>
+                </div>
+            </div>
+            <div id="transferMoneyContent" class="modal-content active">
+                <div class="header">Chuyển tiền đến ví khác</div>
+                <div class="content">
+                    <div class="title">
+                        Từ
+                    </div>
+                    <div class="group">
+                        <div class="item">
+                            <label>Ví</label>
+                            <div class="item-content">
+                                <img src="./assets/items/icon15.png" alt="">
+                                <div class="right">
+                                    <p>Tiền cũ</p>
+                                    <img src="./assets/right-chevron.svg" alt="right-chevron" class="right-chevron">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Nhóm</label>
+                            <div class="item-content">
+                                <img src="./assets/items/icon13.png" alt="">
+                                <div class="right">
+                                    <p>Nhà hàng</p>
+                                    <img src="./assets/right-chevron.svg" alt="right-chevron" class="right-chevron">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Số tiền</label>
+                            <div class="item-content">
+                                <div class="right">
+                                    <input type="text" value="0" class="money">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="modal-overlay">
-            <div class="modal-wrapper">
-                <div class="modal active">
-                    <a class="close-modal"></a>
-                    <div class="modal-content">
-                        <h3>Chia sẻ ví</h3>
-                        <h3>Chia sẻ ví</h3>
-                        <h3>Chia sẻ ví</h3>
-                        <h3>Chia sẻ ví</h3>                        <h3>Chia sẻ ví</h3>
-                        <h3>Chia sẻ ví</h3>
+                    <div class="title">
+                        Đến
+                    </div>
+                    <div class="group">
+                        <div class="item">
+                            <label>Nhóm</label>
+                            <div class="item-content">
+                                <img src="./assets/items/icon13.png" alt="">
+                                <div class="right">
+                                    <p>Nhà hàng</p>
+                                    <img src="./assets/right-chevron.svg" alt="right-chevron" class="right-chevron">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Nhóm</label>
+                            <div class="item-content">
+                                <img src="./assets/items/icon13.png" alt="">
+                                <div class="right">
+                                    <p>Tiền lãi</p>
+                                    <img src="./assets/right-chevron.svg" alt="right-chevron" class="right-chevron">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label>Ngày</label>
+                            <div class="item-content">
+                                <div class="right">
+                                    <input type="date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="item item-note">
+                            <label>Ghi chú</label>
+                            <div>
+                                <input type="text" placeholder="Nội dung ghi chú">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <div>
+                            <p>Không tính vào báo cáo</p>
+                            <p>Các giao dịch này sẽ dudojc loại khỏi báo cáo ở cả hai ví</p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <div>
+                            <p>Không tính vào báo cáo</p>
+                            <p>Các giao dịch này sẽ dudojc loại khỏi báo cáo ở cả hai ví</p>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="btn btn-cancel">Hủy</button>
+                        <button class="btn btn-success">Xong</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <script>
@@ -299,20 +402,27 @@
                 }
             });
 
-            // Xử lí khi view detail trong báo cáo
-            const mainDetail = document.querySelector('.main-detail');
-            const categoryItems = document.querySelectorAll('.category-item');
-            categoryItems.forEach(category => {
-                category.addEventListener('click', function () {
-                    mainDetail.classList.add('active');
-                })
-            })
-
-            //  Đóng lại khi click button back
-            const backIcon = document.querySelector('#back-icon');
-            backIcon.addEventListener('click', function () {
-                mainDetail.classList.remove('active');
+            // Xử lí đóng mở modal
+            const chiaSeVi = document.querySelector('#share-wallet');
+            const closeModal = document.querySelector('.close-modal');
+            const modal = document.querySelector('.modal');
+            const chiaSeViContent = document.querySelector('#shareWalletContent');
+            const transferMoney = document.querySelector('#transfer-money');
+            const transferMoneyContent = document.querySelector('#transferMoneyContent');
+            chiaSeVi.addEventListener('click', function () {
+                modal.classList.add('active');
+                chiaSeViContent.classList.add('active');
             });
+            transferMoney.addEventListener('click', function () {
+                modal.classList.add('active');
+                transferMoneyContent.classList.add('active');
+            });
+            closeModal.addEventListener('click', function () {
+                modal.classList.remove('active');
+                transferMoneyContent.classList.remove('active');
+                chiaSeViContent.classList.remove('active');
+            });
+
         })
     </script>
 </body>
