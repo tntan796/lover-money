@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="sidebar">
+                <div class="menu-action">
+                    <img src="./assets/menu.svg" alt="menu" class="menu-icon">
+                </div>
+                <div class="account-wrapper">
+                    <div class="logo">
+                        <img src="./assets/badge.svg" alt="badge">
+                    </div>
+                    <div class="account-name">
+                        Tantanotnt96
+                    </div>
+                    <div class="account-email">
+                        tantanotnt96@gmail.com
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li>
+                        <img src="./assets/person.svg" alt="person" class="icon">
+                        <div class="menu-info">
+                            <label>Quản lý tài khoản</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/wallet.svg" alt="wallet" class="icon">
+                        <div class="menu-info">
+                            <label>Ví của tôi</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/package.svg" alt="package" class="icon">
+                        <div class="menu-info">
+                            <label>Nhóm</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/link.svg" alt="link" class="icon">
+                        <div class="menu-info">
+                            <label>Liên kết ngân hàng</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="./assets/menu.svg" alt="menu" class="menu-icon">
+                    </li>
+                    <li class="menu-item">
+                        <a href="/index.html">
+                            <img src="./assets/transaction.svg" alt="transaction">
+                            <p>Sổ giao dịch</p>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/bao-cao.html">
+                            <img src="./assets/report.svg" alt="report">
+                            <p>Báo cáo</p>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/bao-cao.html">
+                            <img src="./assets/budget.svg" alt="budget">
+                            <p>Ngân sách</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <img src="./assets/cart.svg" alt="cart">
+                        <p>
+                            Cửa hàng
+                            <img src="./assets/extend.svg" alt="extend">
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="./assets/help.svg" alt="help">
+                        <p>
+                            Trợ giúp
+                            <img src="./assets/extend.svg" alt="extend">
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="right-wrapper">
+                    <div class="header-wrapper">
+                        <div class="header-left">
+                            <div class="wallet-wrapper">
+                                <div class="wallet-image">
+                                    <img src="./assets/wallet.png" alt="wallet">
+                                </div>
+                                <div class="wallet-info">
+                                    <div class="wallet-name">
+                                        Tiền của Tano
+                                        <img src="./assets/down-chevron.svg" alt="">
+                                    </div>
+                                    <div class="wallet-amount">
+                                        328,412,895
+                                    </div>
+                                    <div class="wallet-list" id="wallets">
+                                        <div class="wallet-item title">
+                                            <span>Chọn ví</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/global.png" alt="global">
+                                            <div>
+                                                <div class="wallet-item--name">Tổng cộng</div>
+                                                <div class="wallet-item--amount">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="wallet-item">
+                                            <span>Tính vào tổng</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/wallet.png" alt="wallet">
+                                            <div>
+                                                <div class="wallet-item--name">Tiền cũ</div>
+                                                <div class="wallet-item--amount">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="wallet-item">
+                                            <span>Không tính vào tổng</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/wallet.png" alt="wallet">
+                                            <div class="wallet-item--active">
+                                                <span>
+                                                    <div class="wallet-item--name">Tiền cũ</div>
+                                                    <div class="wallet-item--amount">333,412,895</div>
+                                                </span>
+                                                <img src="./assets/check.svg" alt="check">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="method">
+                                <div class="method-item">
+                                    <img src="./assets/date.svg" alt="date">
+                                </div>
+                                <div class="method-item">
+                                    <img src="./assets/time.svg" alt="time">
+                                </div>
+                                <div class="method-item">
+                                    <img src="./assets/search.svg" alt="search">
+                                </div>
+                                <div class="method-item">
+                                    <a href="/them-moi.html" class="btn btn-add-transaction">Thêm giao dịch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcons = document.querySelectorAll('.menu-icon');
+            const sideBar = document.querySelector('.sidebar');
+            menuIcons.forEach(menu => {
+                menu.addEventListener('click', function () {
+                    if (sideBar.classList.contains('active')) {
+                        sideBar.classList.remove('active');
+                    } else {
+                        sideBar.classList.add('active');
+                    }
+                })
+            })
+
+
+            // // Xử lí khi click vào xem danh sách ví (ẩn khi click ra ngoài, hiện khi click vào tên)
+            window.addEventListener('click', function(e){  
+                if (e.target == document.querySelector('.wallet-name') || e.target == document.querySelector('.wallet-name img')) {
+                    document.getElementById('wallets').classList.add('active');
+                } else {
+                    document.getElementById('wallets').classList.remove('active');
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

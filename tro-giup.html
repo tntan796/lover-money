@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./tro-giup.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="sidebar">
+                <div class="menu-action">
+                    <img src="./assets/menu.svg" alt="menu" class="menu-icon">
+                </div>
+                <div class="account-wrapper">
+                    <div class="logo">
+                        <img src="./assets/badge.svg" alt="badge">
+                    </div>
+                    <div class="account-name">
+                        Tantanotnt96
+                    </div>
+                    <div class="account-email">
+                        tantanotnt96@gmail.com
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li>
+                        <img src="./assets/person.svg" alt="person" class="icon">
+                        <div class="menu-info">
+                            <label>Quản lý tài khoản</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/wallet.svg" alt="wallet" class="icon">
+                        <div class="menu-info">
+                            <label>Ví của tôi</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/package.svg" alt="package" class="icon">
+                        <div class="menu-info">
+                            <label>Nhóm</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/link.svg" alt="link" class="icon">
+                        <div class="menu-info">
+                            <label>Liên kết ngân hàng</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="./assets/menu.svg" alt="menu" class="menu-icon">
+                    </li>
+                    <li class="menu-item">
+                        <a href="/index.html">
+                            <img src="./assets/transaction.svg" alt="transaction">
+                            <p>Sổ giao dịch</p>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/bao-cao.html">
+                            <img src="./assets/report.svg" alt="report">
+                            <p>Báo cáo</p>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/bao-cao.html">
+                            <img src="./assets/budget.svg" alt="budget">
+                            <p>Ngân sách</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <img src="./assets/cart.svg" alt="cart">
+                        <p>
+                            Cửa hàng
+                            <img src="./assets/extend.svg" alt="extend">
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="./assets/help.svg" alt="help">
+                        <p>
+                            Trợ giúp
+                            <img src="./assets/extend.svg" alt="extend">
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="right-wrapper">
+                    <div class="header-wrapper">
+                        <div class="header-left">
+                            <div class="wallet-wrapper">
+                                <div class="wallet-image">
+                                    <img src="./assets/wallet.png" alt="wallet">
+                                </div>
+                                <div class="wallet-info">
+                                    <div class="wallet-name">
+                                        Tiền của Tano
+                                        <img src="./assets/down-chevron.svg" alt="">
+                                    </div>
+                                    <div class="wallet-amount">
+                                        328,412,895
+                                    </div>
+                                    <div class="wallet-list" id="wallets">
+                                        <div class="wallet-item title">
+                                            <span>Chọn ví</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/global.png" alt="global">
+                                            <div>
+                                                <div class="wallet-item--name">Tổng cộng</div>
+                                                <div class="wallet-item--amount">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="wallet-item">
+                                            <span>Tính vào tổng</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/wallet.png" alt="wallet">
+                                            <div>
+                                                <div class="wallet-item--name">Tiền cũ</div>
+                                                <div class="wallet-item--amount">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="wallet-item">
+                                            <span>Không tính vào tổng</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/wallet.png" alt="wallet">
+                                            <div class="wallet-item--active">
+                                                <span>
+                                                    <div class="wallet-item--name">Tiền cũ</div>
+                                                    <div class="wallet-item--amount">333,412,895</div>
+                                                </span>
+                                                <img src="./assets/check.svg" alt="check">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="method">
+                                <div class="method-item">
+                                    <img src="./assets/date.svg" alt="date">
+                                </div>
+                                <div class="method-item">
+                                    <img src="./assets/time.svg" alt="time">
+                                </div>
+                                <div class="method-item">
+                                    <img src="./assets/search.svg" alt="search">
+                                </div>
+                                <div class="method-item">
+                                    <a href="/them-moi.html" class="btn btn-add-transaction">Thêm giao dịch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="faq-wrapper">
+                            <div class="faq-header">
+                                <img src="./assets/faq/top_image.jpg" alt="">
+                                <div class="crop-flip"></div>
+                                <div class="header-body">
+                                    <h1>Our Support Center</h1>
+                                    <span>Get the most our of software. Contact us if you don't find what you're looking for</span>
+                                    <a class="btn btn-send-message">Send message</a>
+                                </div>
+                            </div>
+                            <div class="faq-menu">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="ios" name="filter">
+                                        <label for="ios">
+                                            <img src="./assets/faq/rsz_ios-home.png" alt="ios">
+                                            <span>IOS</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="mac" name="filter">
+                                        <label for="mac">
+                                            <img src="./assets/faq/rsz_mac-home.png" alt="Mac">
+                                            <span>Mac</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="android" name="filter"> 
+                                        <label for="android">
+                                            <img src="./assets/faq/rsz_android-home.png" alt="Android">
+                                            <span>Android</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="window" name="filter">
+                                        <label for="window">
+                                            <img src="./assets/faq/rsz_windows-home.png" alt="Windows">
+                                            <span>Windows</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="window-phone" name="filter">
+                                        <label for="window-phone">
+                                            <img src="./assets/faq/rsz_windowphone-home.png" alt="Windowphone">
+                                            <span>Window phone</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="Web" name="filter">
+                                        <label for="Web">
+                                            <img src="./assets/faq/rsz_web-home.png" alt="Web">
+                                            <span>Web</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="faq-content">
+                                <div class="faq-content-group">
+                                    <div class="group-title">BASIC QUESTIONS</div>
+                                    <div class="faq-item">
+                                        <div class="title">
+                                            <img src="./assets/down-chevron.svg" alt="">
+                                            What is Money Lover? What can I use it for?
+                                        </div>
+                                        <div class="content">
+                                            <p>1. Record and categorize expenses/ incomes</p>
+                                            <p>2. Create budgets and keep track saving plans.</p>
+                                            <p>3. Keep track your debt/ loan.</p>
+                                            <p>4. Bill reminders & schedule for recurring transactions..</p>
+                                            <p>5. Travel mode for tourists. You can see more user guide blogs at [here](http://note.moneylover.me/hard-to-use-here-are-guides/)</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="title">
+                                            <img src="./assets/down-chevron.svg" alt="">
+                                            Can I use Money Lover in other devices?
+                                        </div>
+                                        <div class="content">
+                                            <p>Yes, in case you registered Money Lover account. You only need to login in other devices to continue use Money Lover.</p>
+                                            <p>We support Android, iOS, Windows Phone, Windows 8.1, 10; MacOS and Web-based.</p>
+                                            <p>Cloud service makes Money Lover work seamlessly across all devices.</p>
+                                            <p>Android : phone and tablet.</p>
+                                            <p>iOS : iPhone, iPad and iPod</p>
+                                            <p>Windows : Windows 8.1, Windows 10 and Windows phone.</p>
+                                            <p>Mac OS : testing</p>
+                                            <p>Web version : web.moneylover.me</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="title">
+                                            <img src="./assets/down-chevron.svg" alt="">
+                                            Can I import CSV or excel files to Money Lover?
+                                        </div>
+                                        <div class="content">
+                                          <p>We can't support for these options. Sorry for this inconvenience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcons = document.querySelectorAll('.menu-icon');
+            const sideBar = document.querySelector('.sidebar');
+            menuIcons.forEach(menu => {
+                menu.addEventListener('click', function () {
+                    if (sideBar.classList.contains('active')) {
+                        sideBar.classList.remove('active');
+                    } else {
+                        sideBar.classList.add('active');
+                    }
+                })
+            })
+
+
+            // // Xử lí khi click vào xem danh sách ví (ẩn khi click ra ngoài, hiện khi click vào tên)
+            window.addEventListener('click', function(e){  
+                if (e.target == document.querySelector('.wallet-name') || e.target == document.querySelector('.wallet-name img')) {
+                    document.getElementById('wallets').classList.add('active');
+                } else {
+                    document.getElementById('wallets').classList.remove('active');
+                }
+            });
+
+            // Xử lí đóng mở câu hỏi
+            const items = document.querySelectorAll('.faq-item .title');
+            items.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (item.parentNode.classList.contains('active')) {
+                        item.parentNode.classList.remove('active');
+                    } else {
+                        item.parentNode.classList.add('active');
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

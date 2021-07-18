@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./bao-cao.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="sidebar">
+                <div class="menu-action">
+                    <img src="./assets/menu.svg" alt="menu" class="menu-icon">
+                </div>
+                <div class="account-wrapper">
+                    <div class="logo">
+                        <img src="./assets/badge.svg" alt="badge">
+                    </div>
+                    <div class="account-name">
+                        Tantanotnt96
+                    </div>
+                    <div class="account-email">
+                        tantanotnt96@gmail.com
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li>
+                        <img src="./assets/person.svg" alt="person" class="icon">
+                        <div class="menu-info">
+                            <label>Quản lý tài khoản</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/wallet.svg" alt="wallet" class="icon">
+                        <div class="menu-info">
+                            <label>Ví của tôi</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/package.svg" alt="package" class="icon">
+                        <div class="menu-info">
+                            <label>Nhóm</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/link.svg" alt="link" class="icon">
+                        <div class="menu-info">
+                            <label>Liên kết ngân hàng</label>
+                            <img src="./assets/right-chevron.svg" alt="chevron" class="chevron">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="./assets/menu.svg" alt="menu" class="menu-icon">
+                    </li>
+                    <li class="menu-item">
+                        <a href="/index.html">
+                            <img src="./assets/transaction.svg" alt="transaction">
+                            <p>Sổ giao dịch</p>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/bao-cao.html">
+                            <img src="./assets/report.svg" alt="report">
+                            <p>Báo cáo</p>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="/bao-cao.html">
+                            <img src="./assets/budget.svg" alt="budget">
+                            <p>Ngân sách</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <img src="./assets/cart.svg" alt="cart">
+                        <p>
+                            Cửa hàng
+                            <img src="./assets/extend.svg" alt="extend">
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="./assets/help.svg" alt="help">
+                        <p>
+                            Trợ giúp
+                            <img src="./assets/extend.svg" alt="extend">
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="right-wrapper">
+                    <div class="header-wrapper">
+                        <div class="header-left">
+                            <div class="wallet-wrapper">
+                                <div class="wallet-image">
+                                    <img src="./assets/wallet.png" alt="wallet">
+                                </div>
+                                <div class="wallet-info">
+                                    <div class="wallet-name">
+                                        Tiền của Tano
+                                        <img src="./assets/down-chevron.svg" alt="">
+                                    </div>
+                                    <div class="wallet-amount">
+                                        328,412,895
+                                    </div>
+                                    <div class="wallet-list" id="wallets">
+                                        <div class="wallet-item title">
+                                            <span>Chọn ví</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/global.png" alt="global">
+                                            <div>
+                                                <div class="wallet-item--name">Tổng cộng</div>
+                                                <div class="wallet-item--amount">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="wallet-item">
+                                            <span>Tính vào tổng</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/wallet.png" alt="wallet">
+                                            <div>
+                                                <div class="wallet-item--name">Tiền cũ</div>
+                                                <div class="wallet-item--amount">0</div>
+                                            </div>
+                                        </div>
+                                        <div class="wallet-item">
+                                            <span>Không tính vào tổng</span>
+                                        </div>
+                                        <div class="wallet-item detail">
+                                            <img src="./assets/wallet.png" alt="wallet">
+                                            <div class="wallet-item--active">
+                                                <span>
+                                                    <div class="wallet-item--name">Tiền cũ</div>
+                                                    <div class="wallet-item--amount">333,412,895</div>
+                                                </span>
+                                                <img src="./assets/check.svg" alt="check">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="method">
+                                <div class="method-item">
+                                    <img src="./assets/date.svg" alt="date">
+                                </div>
+                                <div class="method-item">
+                                    <img src="./assets/time.svg" alt="time">
+                                </div>
+                                <div class="method-item">
+                                    <img src="./assets/search.svg" alt="search">
+                                </div>
+                                <div class="method-item">
+                                    <a href="/them-moi.html" class="btn btn-add-transaction">Thêm giao dịch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+
+
+                        <div class="main-left">
+                            <div class="balance">
+                                <div class="balance-start">
+                                    <div class="balance-title">Số dư đầu</div>
+                                    <div class="balance-amount">+312,660,269</div>
+                                </div>
+                                <div class="balance-end">
+                                    <div class="balance-title">Số dư đầu</div>
+                                    <div class="balance-amount">+312,660,269</div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="chart-header">
+                                    <div class="chart-title">
+                                        <div class="title-bar">
+                                            Thu nhập ròng
+                                        </div>
+                                        <div class="amount-bar">
+                                            +15,503,626
+                                        </div>
+                                    </div>
+                                    <div class="chart-body">
+                                        <img src="./assets/report/chart-body.png" alt="chart-body"
+                                            class="chart-body-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="donut-chart">
+                                <div class="income">
+                                    <img src="./assets/report/income.PNG" alt="">
+                                </div>
+                                <div class="outcome">
+                                    <img src="./assets/report/income.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="debt-loan">
+                                <ul>
+                                    <li>
+                                        <p>Nợ</p>
+                                        <span>
+                                            <p class="income">0</p>
+                                            <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                class="right-chevron">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <p>Cho vay</p>
+                                        <span>
+                                            <p class="expense">0</p>
+                                            <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                class="right-chevron">
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <p>Khác</p>
+                                        <span>
+                                            <p class="other">0</p>
+                                            <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                class="right-chevron">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-right">
+                            <div class="header">
+                                <div class="header-left">
+                                    <img src="./assets/close.svg" alt="close">
+                                    <p>Khoản chi</p>
+                                </div>
+                                <div class="header-right">
+                                    <div class="display-type active">
+                                        <img src="./assets/chart.svg" alt="chart">
+                                    </div>
+                                    <div class="display-type">
+                                        <img src="./assets/statistical.svg" alt="statistical">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-wrapper">
+                                <div class="chart-content">
+                                    <div class="chart">
+                                        <img src="./assets/report/chart-detail.PNG" alt="">
+                                    </div>
+                                    <div class="amount">
+                                        2,254,474
+                                    </div>
+                                </div>
+                                <div class="category-list">
+                                    <ul>
+                                        <li class="category-item">
+                                            <span class="item-left">
+                                                <img src="./assets/items/icon10.png" alt="transaction">
+                                                <label>Bạn bè & Người yêu</label>
+                                            </span>
+                                            <span class="item-right">
+                                                <p class="expense">2356345</p>
+                                                <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                    class="right-chevron">
+                                            </span>
+                                        </li>
+                                        <li class="category-item">
+                                            <span class="item-left">
+                                                <img src="./assets/items/icon10.png" alt="transaction">
+                                                <label>Hóa đơn & Tiện ích</label>
+                                            </span>
+                                            <span class="item-right">
+                                                <p class="expense">23423423</p>
+                                                <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                    class="right-chevron">
+                                            </span>
+                                        </li>
+                                        <li class="category-item">
+                                            <span class="item-left">
+                                                <img src="./assets/items/icon10.png" alt="transaction">
+                                                <label>Ăn uống</label>
+                                            </span>
+                                            <span class="item-right">
+                                                <p class="expense">234234234</p>
+                                                <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                    class="right-chevron">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Detail -->
+                            <div class="main-detail">
+                                <div class="header">
+                                    <div class="header-left">
+                                        <img src="./assets/back.svg" alt="close" id="back-icon">
+                                        <p>Mua sắm</p>
+                                    </div>
+                                    <div class="header-right">
+                                        <div class="display-type active">
+                                            <img src="./assets/chart.svg" alt="chart">
+                                        </div>
+                                        <div class="display-type">
+                                            <img src="./assets/statistical.svg" alt="statistical">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-wrapper">
+                                    <div class="chart-content">
+                                        <div class="chart">
+                                            <img src="./assets/report/chart-detail.PNG" alt="">
+                                        </div>
+                                        <div class="amount">
+                                            2,254,474
+                                        </div>
+                                    </div>
+                                    <div class="category-list">
+                                        <ul>
+                                            <li class="category-item">
+                                                <span class="item-left">
+                                                    <img src="./assets/items/icon10.png" alt="transaction">
+                                                    <label>Bạn bè & Người yêu</label>
+                                                </span>
+                                                <span class="item-right">
+                                                    <p class="expense">2356345</p>
+                                                    <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                        class="right-chevron">
+                                                </span>
+                                            </li>
+                                            <li class="category-item">
+                                                <span class="item-left">
+                                                    <img src="./assets/items/icon10.png" alt="transaction">
+                                                    <label>Hóa đơn & Tiện ích</label>
+                                                </span>
+                                                <span class="item-right">
+                                                    <p class="expense">23423423</p>
+                                                    <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                        class="right-chevron">
+                                                </span>
+                                            </li>
+                                            <li class="category-item">
+                                                <span class="item-left">
+                                                    <img src="./assets/items/icon10.png" alt="transaction">
+                                                    <label>Ăn uống</label>
+                                                </span>
+                                                <span class="item-right">
+                                                    <p class="expense">234234234</p>
+                                                    <img src="./assets/right-chevron.svg" alt="right-chevron"
+                                                        class="right-chevron">
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Detail -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcons = document.querySelectorAll('.menu-icon');
+            const sideBar = document.querySelector('.sidebar');
+            menuIcons.forEach(menu => {
+                menu.addEventListener('click', function () {
+                    if (sideBar.classList.contains('active')) {
+                        sideBar.classList.remove('active');
+                    } else {
+                        sideBar.classList.add('active');
+                    }
+                })
+            })
+
+
+            // // Xử lí khi click vào xem danh sách ví (ẩn khi click ra ngoài, hiện khi click vào tên)
+            window.addEventListener('click', function (e) {
+                if (e.target == document.querySelector('.wallet-name') || e.target == document.querySelector('.wallet-name img')) {
+                    document.getElementById('wallets').classList.add('active');
+                } else {
+                    document.getElementById('wallets').classList.remove('active');
+                }
+            });
+
+            // Xử lí khi view detail trong báo cáo
+            const mainDetail = document.querySelector('.main-detail');
+            const categoryItems = document.querySelectorAll('.category-item');
+            categoryItems.forEach(category => {
+                category.addEventListener('click', function () {
+                    mainDetail.classList.add('active');
+                })
+            })
+
+            //  Đóng lại khi click button back
+            const backIcon  = document.querySelector('#back-icon');
+            backIcon.addEventListener('click', function() {
+                mainDetail.classList.remove('active');
+            });
+        })
+    </script>
+</body>
+
+</html>
