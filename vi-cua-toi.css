@@ -55,29 +55,29 @@ a {
   padding-top: 10px;
   cursor: pointer;
 }
-.container .sidebar .menu-list li {
+.container .sidebar .menu-list a li {
   color: rgba(0, 0, 0, 0.54);
   padding: 20px;
   border-bottom: 1px solid #e0d9d9;
   display: flex;
   align-items: center;
 }
-.container .sidebar .menu-list li:first-of-type {
+.container .sidebar .menu-list a li:first-of-type {
   border-top: 1px solid #e0d9d9;
 }
-.container .sidebar .menu-list li:hover {
+.container .sidebar .menu-list a li:hover {
   cursor: pointer;
   background: #d1d0d0;
 }
-.container .sidebar .menu-list li:hover label {
+.container .sidebar .menu-list a li:hover label {
   cursor: pointer;
 }
-.container .sidebar .menu-list li .icon {
+.container .sidebar .menu-list a li .icon {
   flex: 1;
   width: 25px;
   height: 25px;
 }
-.container .sidebar .menu-list li .menu-info {
+.container .sidebar .menu-list a li .menu-info {
   flex: 3;
   display: flex;
   justify-content: space-between;
@@ -103,7 +103,7 @@ a {
 .container-wrapper .left .menu-item a:hover {
   color: #2db84c;
 }
-.container-wrapper .left .menu-item.active a {
+.container-wrapper .left .menu-item.active p {
   color: #2db84c;
 }
 .container-wrapper .left .menu-item:hover {
@@ -565,6 +565,114 @@ a {
   padding: 5px 0px;
   width: 100%;
   border: none;
+}
+#transferMoneyContent .count-to-report, #transferMoneyContent .add-fee-transfer {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+#transferMoneyContent .count-to-report input, #transferMoneyContent .add-fee-transfer input {
+  height: 15px;
+  width: 15px;
+  margin-right: 20px;
+}
+#transferMoneyContent .count-to-report .title, #transferMoneyContent .add-fee-transfer .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+#transferMoneyContent .count-to-report .description, #transferMoneyContent .add-fee-transfer .description {
+  font-size: 12px;
+}
+#transferMoneyContent .button-wrapper {
+  text-align: right;
+}
+#transferMoneyContent .button-wrapper .btn {
+  border: none;
+  padding: 10px 30px;
+  color: #2db84c;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#transferMoneyContent .button-wrapper .btn:hover {
+  background: #97e5a8;
+}
+
+#adjustAmount {
+  color: rgba(0, 0, 0, 0.87);
+}
+#adjustAmount .header {
+  padding: 10px 0px;
+  font-size: 20px;
+}
+#adjustAmount .wallet {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#adjustAmount .wallet-right {
+  display: flex;
+}
+#adjustAmount .wallet-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+#adjustAmount .wallet-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#adjustAmount .amount {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#adjustAmount .amount input {
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 5px;
+  border: gray;
+}
+#adjustAmount .not-for-report {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+#adjustAmount .not-for-report input {
+  margin-right: 20px;
+}
+#adjustAmount .button-wrapper {
+  padding: 10px 0px;
+  text-align: right;
+}
+#adjustAmount .button-wrapper .btn {
+  color: #2db84c;
+  font-weight: bold;
+  padding: 10px 35px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(92, 240, 119, 0.2);
+}
+#adjustAmount .button-wrapper .btn:hover {
+  background: rgba(26, 163, 51, 0.3);
+}
+#adjustAmount .chevron-right {
+  height: 15px;
+  width: 15px;
 }
 
 /*# sourceMappingURL=vi-cua-toi.css.map */

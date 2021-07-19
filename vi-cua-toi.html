@@ -258,7 +258,7 @@
                                     <ul>
                                         <li id="share-wallet">Chia sẻ ví</li>
                                         <li id="transfer-money">Chuyển tiền</li>
-                                        <li id="adjust-money">Điều chỉnh số dư</li>
+                                        <li id="adjustContent">Điều chỉnh số dư</li>
                                     </ul>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@
         </div>
     </div>
 
-    <div class="modal active">
+    <div class="modal">
         <div class="modal-wrapper small">
             <div class="modal-header">
                 <a class="close-modal"> x </a>
@@ -289,7 +289,7 @@
                     <button class="btn btn-save">Xong</button>
                 </div>
             </div>
-            <div id="transferMoneyContent" class="modal-content active">
+            <div id="transferMoneyContent" class="modal-content">
                 <div class="header">Chuyển tiền đến ví khác</div>
                 <div class="content">
                     <div class="title">
@@ -325,10 +325,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="title">
-                        Đến
-                    </div>
+                    <div class="title"> Đến </div>
                     <div class="group">
                         <div class="item">
                             <label>Nhóm</label>
@@ -367,23 +364,54 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="count-to-report">
                         <input type="checkbox">
                         <div>
-                            <p>Không tính vào báo cáo</p>
-                            <p>Các giao dịch này sẽ dudojc loại khỏi báo cáo ở cả hai ví</p>
+                            <p class="title">Không tính vào báo cáo</p>
+                            <p class="description">Các giao dịch này sẽ được loại khỏi báo cáo ở cả hai ví</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="add-fee-transfer">
                         <input type="checkbox">
                         <div>
-                            <p>Không tính vào báo cáo</p>
-                            <p>Các giao dịch này sẽ dudojc loại khỏi báo cáo ở cả hai ví</p>
+                            <p class="title">Thêm phí chuyển khoán</p>
                         </div>
                     </div>
                     <div class="button-wrapper">
                         <button class="btn btn-cancel">Hủy</button>
                         <button class="btn btn-success">Xong</button>
+                    </div>
+                </div>
+            </div>
+            <div id="adjustAmountContent" class="modal-content">
+                <div class="header">Điều chỉnh số dư</div>
+                <div class="content">
+                    <div class="wallet">
+                        <label>Ví</label>
+                        <div class="wallet-right">
+                            <img src="./assets/items/icon12.png" alt="icon" class="wallet-icon">
+                            <div class="wallet-content">
+                                <label>Tiền của Tano</label>
+                                <img src="./assets/right-chevron.svg" alt="" class="chevron-right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <label>Nhập số dư hiện tại của ví</label>
+                        <div>
+                          <input type="text" value="124234">
+                        </div>
+                    </div>
+                    <div class="not-for-report">
+                        <input type="checkbox">
+                        <div>
+                            <div class="title">Không tính vào báo cáo</div>
+                            <div class="description">Bỏ qua ví này và số dư khỏi tổng</div>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="btn btn-cancel">Hủy</button>
+                        <button class="btn btn-cancel">Xong</button>
                     </div>
                 </div>
             </div>
@@ -421,6 +449,8 @@
             const chiaSeViContent = document.querySelector('#shareWalletContent');
             const transferMoney = document.querySelector('#transfer-money');
             const transferMoneyContent = document.querySelector('#transferMoneyContent');
+            const adjustAmountContent = document.querySelector('#adjustAmountContent');
+            const adjustContent = document.querySelector('#adjustContent');
             chiaSeVi.addEventListener('click', function () {
                 modal.classList.add('active');
                 chiaSeViContent.classList.add('active');
@@ -429,10 +459,15 @@
                 modal.classList.add('active');
                 transferMoneyContent.classList.add('active');
             });
+            adjustContent.addEventListener('click', function () {
+                modal.classList.add('active');
+                adjustAmountContent.classList.add('active');
+            });
             closeModal.addEventListener('click', function () {
                 modal.classList.remove('active');
                 transferMoneyContent.classList.remove('active');
                 chiaSeViContent.classList.remove('active');
+                adjustAmountContent.classList.remove('active');
             });
 
         })
