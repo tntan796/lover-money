@@ -63,37 +63,41 @@
                     <li class="menu-item">
                         <img src="./assets/menu.svg" alt="menu" class="menu-icon">
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                         <a href="/index.html">
                             <img src="./assets/transaction.svg" alt="transaction">
                             <p>Sổ giao dịch</p>
                         </a>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="/bao-cao.html">
                             <img src="./assets/report.svg" alt="report">
                             <p>Báo cáo</p>
                         </a>
                     </li>
-                    <li class="menu-item active">
-                        <a href="/bao-cao.html">
+                    <li class="menu-item">
+                        <a href="/ngan-sach.html">
                             <img src="./assets/budget.svg" alt="budget">
                             <p>Ngân sách</p>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <img src="./assets/cart.svg" alt="cart">
-                        <p>
-                            Cửa hàng
-                            <img src="./assets/extend.svg" alt="extend">
-                        </p>
+                        <a href="/cua-hang.html">
+                            <img src="./assets/cart.svg" alt="cart">
+                            <p>
+                                Cửa hàng
+                                <img src="./assets/extend.svg" alt="extend">
+                            </p>
+                        </a>
                     </li>
                     <li class="menu-item">
-                        <img src="./assets/help.svg" alt="help">
-                        <p>
-                            Trợ giúp
-                            <img src="./assets/extend.svg" alt="extend">
-                        </p>
+                        <a href="/tro-giup.html">
+                            <img src="./assets/help.svg" alt="help">
+                            <p>
+                                Trợ giúp
+                                <img src="./assets/extend.svg" alt="extend">
+                            </p>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -169,105 +173,139 @@
                         </div>
                     </div>
                     <div class="main">
-                        <ul class="date-range-wrapper">
-                            <li>Tháng trước</li>
-                            <li class="active">Tháng này</li>
-                            <li>Tương lai</li>
-                        </ul>
-                        <div class="transaction-overview">
-                            <div class="transaction-overview-item inflow">
-                                <label>Tiền vào</label>
-                                <span>17,938,400</span>
+                        <div class="main-left active">
+                            <ul class="date-range-wrapper">
+                                <li>Tháng trước</li>
+                                <li class="active">Tháng này</li>
+                                <li>Tương lai</li>
+                            </ul>
+                            <div class="transaction-overview">
+                                <div class="transaction-overview-item inflow">
+                                    <label>Tiền vào</label>
+                                    <span>17,938,400</span>
+                                </div>
+                                <div class="transaction-overview-item outflow">
+                                    <label>Tiền vào</label>
+                                    <span>17,938,400</span>
+                                </div>
+                                <div class="transaction-overview-item total-amount">
+                                    <label></label>
+                                    <span>+15,503,626</span>
+                                </div>
                             </div>
-                            <div class="transaction-overview-item outflow">
-                                <label>Tiền vào</label>
-                                <span>17,938,400</span>
+                            <div class="view-report">
+                                Xem báo cáo cho giai đoạn này
                             </div>
-                            <div class="transaction-overview-item total-amount">
-                                <label></label>
-                                <span>+15,503,626</span>
+    
+                            <div class="transaction-list">
+                                <div class="transaction-item">
+                                    <div class="transaction-header">
+                                        <div class="date-view">
+                                            <div class="view-day">
+                                                16
+                                            </div>
+                                            <div class="view-date">
+                                                <div class="day">Thứ sáu</div>
+                                                <div class="months">Tháng bảy 2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="amount-view">
+                                            <div class="amount">-578,000</div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-detail">
+                                        <div class="item">
+                                            <div class="item-image">
+                                                <img src="./assets/mobile.png" alt="mobile">
+                                            </div>
+                                            <div class="title">
+                                                <div class="title-top">Thiết bị điện tử</div>
+                                                <div class="title-bot">
+                                                    2 dây Vga
+                                                </div>
+                                            </div>
+                                            <div class="amount">
+                                                50,000
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-image">
+                                                <img src="./assets/mobile.png" alt="mobile">
+                                            </div>
+                                            <div class="title">
+                                                <div class="title-top">Thiết bị điện tử</div>
+                                                <div class="title-bot">
+                                                    2 dây Vga
+                                                </div>
+                                            </div>
+                                            <div class="amount">
+                                                50,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="transaction-item">
+                                    <div class="transaction-header">
+                                        <div class="date-view">
+                                            <div class="view-day">
+                                                16
+                                            </div>
+                                            <div class="view-date">
+                                                <div class="day">Thứ sáu</div>
+                                                <div class="months">Tháng bảy 2021</div>
+                                            </div>
+                                        </div>
+                                        <div class="amount-view">
+                                            <div class="amount">+17,578,000</div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-detail">
+                                        <div class="item">
+                                            <div class="item-image">
+                                                <img src="./assets/mobile.png" alt="mobile">
+                                            </div>
+                                            <div class="title">
+                                                <div class="title-top">Thiết bị điện tử</div>
+                                                <div class="title-bot">
+                                                    2 dây Vga
+                                                </div>
+                                            </div>
+                                            <div class="amount income">
+                                                17,578,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="view-report">
-                            Xem báo cáo cho giai đoạn này
-                        </div>
-
-                        <div class="transaction-list">
-                            <div class="transaction-item">
-                                <div class="transaction-header">
-                                    <div class="date-view">
-                                        <div class="view-day">
-                                            16
-                                        </div>
-                                        <div class="view-date">
-                                            <div class="day">Thứ sáu</div>
-                                            <div class="months">Tháng bảy 2021</div>
-                                        </div>
-                                    </div>
-                                    <div class="amount-view">
-                                        <div class="amount">-578,000</div>
-                                    </div>
+                        <div class="main-right active">
+                            <div class="header">
+                                <div class="header-left">
+                                    <img src="./assets/close.svg" alt="close" class="close-detail">
+                                    <p>Chi tiết</p>
                                 </div>
-                                <div class="transaction-detail">
-                                    <div class="item">
-                                        <div class="item-image">
-                                            <img src="./assets/mobile.png" alt="mobile">
-                                        </div>
-                                        <div class="title">
-                                            <div class="title-top">Thiết bị điện tử</div>
-                                            <div class="title-bot">
-                                                2 dây Vga
-                                            </div>
-                                        </div>
-                                        <div class="amount">
-                                            50,000
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-image">
-                                            <img src="./assets/mobile.png" alt="mobile">
-                                        </div>
-                                        <div class="title">
-                                            <div class="title-top">Thiết bị điện tử</div>
-                                            <div class="title-bot">
-                                                2 dây Vga
-                                            </div>
-                                        </div>
-                                        <div class="amount">
-                                            50,000
-                                        </div>
+                                <div class="header-right">
+                                    <div class="button-method">
+                                        <span class="btn btn-delete">Xóa</span>
+                                        <span class="btn btn-edit">Sửa</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="transaction-item">
-                                <div class="transaction-header">
-                                    <div class="date-view">
-                                        <div class="view-day">
-                                            16
-                                        </div>
-                                        <div class="view-date">
-                                            <div class="day">Thứ sáu</div>
-                                            <div class="months">Tháng bảy 2021</div>
-                                        </div>
+                            <div class="transaction-detail">
+                                <img src="./assets/items/icon12.png" alt="icon" class="transaction-image">
+                                <div>
+                                    <div class="transaction-name">Mua sắm</div>
+                                    <div class="transaction-wallet">
+                                        Ví của Tano
                                     </div>
-                                    <div class="amount-view">
-                                        <div class="amount">+17,578,000</div>
+                                    <div class="transaction-date">
+                                        Thứ hai, 19/07/2021
                                     </div>
-                                </div>
-                                <div class="transaction-detail">
-                                    <div class="item">
-                                        <div class="item-image">
-                                            <img src="./assets/mobile.png" alt="mobile">
-                                        </div>
-                                        <div class="title">
-                                            <div class="title-top">Thiết bị điện tử</div>
-                                            <div class="title-bot">
-                                                2 dây Vga
-                                            </div>
-                                        </div>
-                                        <div class="amount income">
-                                            17,578,000
-                                        </div>
+                                    <div class="transaction-description">
+                                        2 hộp muối nha đam
+                                    </div>
+                                    <div class="transaction-amount">
+                                        -150,000
                                     </div>
                                 </div>
                             </div>
@@ -301,6 +339,23 @@
                     document.getElementById('wallets').classList.remove('active');
                 }
             });
+
+            // Xử lí hiển thị transaction detail
+            const mainLeft = document.querySelector('.main-left');
+            const mainRight = document.querySelector('.main-right');
+            const transactionDetails = document.querySelectorAll('.transaction-detail .item');
+            const closeDetail = document.querySelector('.close-detail');
+            transactionDetails.forEach(transaction => {
+                transaction.addEventListener('click', function(e) {
+                    mainLeft.classList.add('active');
+                    mainRight.classList.add('active');
+                });
+            })
+
+            closeDetail.addEventListener('click', function(e) {
+                mainRight.classList.remove('active');
+                mainLeft.classList.remove('active');
+            })
         })
     </script>
 </body>
