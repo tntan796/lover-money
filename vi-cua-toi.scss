@@ -57,8 +57,9 @@ a {
                cursor: pointer;
            }
            &-list {
-               a {
-                    li {
+            
+                li {
+                    a {
                         color: rgba(0,0,0,.54);
                         padding: 20px;
                         border-bottom: 1px solid rgb(224, 217, 217);

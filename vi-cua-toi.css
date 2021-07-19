@@ -55,29 +55,29 @@ a {
   padding-top: 10px;
   cursor: pointer;
 }
-.container .sidebar .menu-list a li {
+.container .sidebar .menu-list li a {
   color: rgba(0, 0, 0, 0.54);
   padding: 20px;
   border-bottom: 1px solid #e0d9d9;
   display: flex;
   align-items: center;
 }
-.container .sidebar .menu-list a li:first-of-type {
+.container .sidebar .menu-list li a:first-of-type {
   border-top: 1px solid #e0d9d9;
 }
-.container .sidebar .menu-list a li:hover {
+.container .sidebar .menu-list li a:hover {
   cursor: pointer;
   background: #d1d0d0;
 }
-.container .sidebar .menu-list a li:hover label {
+.container .sidebar .menu-list li a:hover label {
   cursor: pointer;
 }
-.container .sidebar .menu-list a li .icon {
+.container .sidebar .menu-list li a .icon {
   flex: 1;
   width: 25px;
   height: 25px;
 }
-.container .sidebar .menu-list a li .menu-info {
+.container .sidebar .menu-list li a .menu-info {
   flex: 3;
   display: flex;
   justify-content: space-between;
