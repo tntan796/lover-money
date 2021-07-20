@@ -1,3 +1,86 @@
-
+.dropdown {
+  height: 64px;
+  width: 240px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-title {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.dropdown-menu {
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 8px 12px 9px 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.dropdown-menu:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.dropdown-menu .icon-chevron {
+  height: 15px;
+  width: 15px;
+}
+.dropdown-item {
+  display: flex;
+  flex: 1 1 auto;
+  height: 24px;
+  align-items: center;
+}
+.dropdown-item--icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.dropdown-item--text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-item--text label {
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 24px;
+  font-size: 16px !important;
+  font-weight: 400;
+}
+.dropdown-body {
+  visibility: hidden;
+  display: none;
+}
+.dropdown-body.active {
+  visibility: visible;
+  display: block;
+}
+.dropdown-body .item {
+  display: flex;
+  align-items: center;
+  background: red;
+  padding: 3px;
+}
+.dropdown-body .item-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.dropdown-body .item-name {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  margin: 5px 0px;
+}
+.dropdown-body .item-value {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.54);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
 
 /*# sourceMappingURL=dropdown.css.map */
