@@ -600,14 +600,14 @@ a {
   background: #97e5a8;
 }
 
-#adjustAmount {
+#adjustAmountContent {
   color: rgba(0, 0, 0, 0.87);
 }
-#adjustAmount .header {
+#adjustAmountContent .header {
   padding: 10px 0px;
   font-size: 20px;
 }
-#adjustAmount .wallet {
+#adjustAmountContent .wallet {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -616,20 +616,20 @@ a {
   cursor: pointer;
   margin-bottom: 20px;
 }
-#adjustAmount .wallet-right {
+#adjustAmountContent .wallet-right {
   display: flex;
 }
-#adjustAmount .wallet-icon {
+#adjustAmountContent .wallet-icon {
   height: 30px;
   width: 30px;
   margin-right: 20px;
 }
-#adjustAmount .wallet-content {
+#adjustAmountContent .wallet-content {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-#adjustAmount .amount {
+#adjustAmountContent .amount {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -638,26 +638,26 @@ a {
   cursor: pointer;
   margin-bottom: 20px;
 }
-#adjustAmount .amount input {
+#adjustAmountContent .amount input {
   width: 100%;
   font-size: 14px;
   padding: 5px;
   margin-top: 5px;
   border: gray;
 }
-#adjustAmount .not-for-report {
+#adjustAmountContent .not-for-report {
   display: flex;
   align-items: center;
   line-height: 20px;
 }
-#adjustAmount .not-for-report input {
+#adjustAmountContent .not-for-report input {
   margin-right: 20px;
 }
-#adjustAmount .button-wrapper {
+#adjustAmountContent .button-wrapper {
   padding: 10px 0px;
   text-align: right;
 }
-#adjustAmount .button-wrapper .btn {
+#adjustAmountContent .button-wrapper .btn {
   color: #2db84c;
   font-weight: bold;
   padding: 10px 35px;
@@ -667,10 +667,10 @@ a {
   border-radius: 5px;
   background: rgba(92, 240, 119, 0.2);
 }
-#adjustAmount .button-wrapper .btn:hover {
+#adjustAmountContent .button-wrapper .btn:hover {
   background: rgba(26, 163, 51, 0.3);
 }
-#adjustAmount .chevron-right {
+#adjustAmountContent .chevron-right {
   height: 15px;
   width: 15px;
 }
