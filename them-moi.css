@@ -241,27 +241,27 @@ a {
 .container-wrapper .right-wrapper .header-right .method .btn-add-transaction:hover {
   box-shadow: 0 0 4px gray;
 }
-.container .main {
+.container .transaction-add {
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.54);
 }
-.container .main .add-transaction {
+.container .transaction-add .add-transaction {
   max-width: 850px;
   border-radius: 10px;
   background: white;
   margin: 0 auto;
   padding: 20px;
 }
-.container .main .add-transaction .title {
+.container .transaction-add .add-transaction .title {
   padding: 20px 0px;
   border-bottom: 1px solid #d1d0d0;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.87);
 }
-.container .main .add-transaction form {
+.container .transaction-add .add-transaction form {
   padding: 20px;
 }
-.container .main .add-transaction .form-input-group {
+.container .transaction-add .add-transaction .form-input-group {
   border: 1px solid #ccc8c8;
   margin: 5px;
   border-radius: 5px;
@@ -270,47 +270,47 @@ a {
   box-sizing: border-box;
   cursor: pointer;
 }
-.container .main .add-transaction .form-input-group.image {
+.container .transaction-add .add-transaction .form-input-group.image {
   height: 100%;
 }
-.container .main .add-transaction .form-input-group .right-chevron {
+.container .transaction-add .add-transaction .form-input-group .right-chevron {
   width: 15px;
   height: 15px;
 }
-.container .main .add-transaction .form-input-group .select-item {
+.container .transaction-add .add-transaction .form-input-group .select-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.container .main .add-transaction .form-input-group .select-item--icon {
+.container .transaction-add .add-transaction .form-input-group .select-item--icon {
   flex: 1;
   height: 20px;
   width: 20px;
 }
-.container .main .add-transaction .form-input-group .select-item--right {
+.container .transaction-add .add-transaction .form-input-group .select-item--right {
   flex: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container .main .add-transaction .form-input-group .select-item input {
+.container .transaction-add .add-transaction .form-input-group .select-item input {
   width: 100%;
   border: none;
   padding: 3px 0px;
 }
-.container .main .add-transaction .not-include-report {
+.container .transaction-add .add-transaction .not-include-report {
   display: flex;
   padding: 20px 0px;
 }
-.container .main .add-transaction .not-include-report input {
+.container .transaction-add .add-transaction .not-include-report input {
   margin-right: 20px;
 }
-.container .main .add-transaction .not-include-report .report-title {
+.container .transaction-add .add-transaction .not-include-report .report-title {
   font-weight: bold;
   color: rgba(56, 55, 55, 0.87);
   margin-bottom: 10px;
 }
-.container .main .add-transaction .btn {
+.container .transaction-add .add-transaction .btn {
   background: #2db84c;
   padding: 10px 30px;
   border: none;
@@ -320,11 +320,11 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
-.container .main .add-transaction .btn-default {
+.container .transaction-add .add-transaction .btn-default {
   background: white;
   color: #2db84c;
 }
-.container .main .add-transaction .btn-wrapper {
+.container .transaction-add .add-transaction .btn-wrapper {
   text-align: right;
 }
 

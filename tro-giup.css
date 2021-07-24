@@ -55,29 +55,29 @@ a {
   padding-top: 10px;
   cursor: pointer;
 }
-.container .sidebar .menu-list li {
+.container .sidebar .menu-list a li {
   color: rgba(0, 0, 0, 0.54);
   padding: 20px;
   border-bottom: 1px solid #e0d9d9;
   display: flex;
   align-items: center;
 }
-.container .sidebar .menu-list li:first-of-type {
+.container .sidebar .menu-list a li:first-of-type {
   border-top: 1px solid #e0d9d9;
 }
-.container .sidebar .menu-list li:hover {
+.container .sidebar .menu-list a li:hover {
   cursor: pointer;
   background: #d1d0d0;
 }
-.container .sidebar .menu-list li:hover label {
+.container .sidebar .menu-list a li:hover label {
   cursor: pointer;
 }
-.container .sidebar .menu-list li .icon {
+.container .sidebar .menu-list a li .icon {
   flex: 1;
   width: 25px;
   height: 25px;
 }
-.container .sidebar .menu-list li .menu-info {
+.container .sidebar .menu-list a li .menu-info {
   flex: 3;
   display: flex;
   justify-content: space-between;
@@ -103,7 +103,7 @@ a {
 .container-wrapper .left .menu-item a:hover {
   color: #2db84c;
 }
-.container-wrapper .left .menu-item.active a {
+.container-wrapper .left .menu-item.active p {
   color: #2db84c;
 }
 .container-wrapper .left .menu-item:hover {
@@ -241,14 +241,14 @@ a {
 .container-wrapper .right-wrapper .header-right .method .btn-add-transaction:hover {
   box-shadow: 0 0 4px gray;
 }
-.container .main .faq-wrapper {
+.container .faq-wrapper {
   background: white;
 }
-.container .main .faq-header {
+.container .faq-header {
   position: relative;
   color: white;
 }
-.container .main .faq-header .crop-flip {
+.container .faq-header .crop-flip {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -256,12 +256,12 @@ a {
   top: 0;
   left: 0;
 }
-.container .main .faq-header img {
+.container .faq-header img {
   width: 100%;
   height: 400px;
   opacity: 0.8;
 }
-.container .main .faq-header .header-body {
+.container .faq-header .header-body {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -271,13 +271,13 @@ a {
   justify-content: center;
   align-items: center;
 }
-.container .main .faq-header .header-body h1 {
+.container .faq-header .header-body h1 {
   font-size: 40px;
 }
-.container .main .faq-header .header-body span {
+.container .faq-header .header-body span {
   margin: 20px 0px;
 }
-.container .main .faq-header .header-body .btn-send-message {
+.container .faq-header .header-body .btn-send-message {
   cursor: pointer;
   display: block;
   background: rgba(35, 182, 67, 0.9);
@@ -285,82 +285,82 @@ a {
   border-radius: 5px;
   width: fit-content;
 }
-.container .main .faq-header .header-body .btn-send-message:hover {
+.container .faq-header .header-body .btn-send-message:hover {
   background: #23b643;
 }
-.container .main .faq-menu {
+.container .faq-menu {
   padding: 30px;
 }
-.container .main .faq-menu ul {
+.container .faq-menu ul {
   list-style: none;
   display: flex;
   flex: 1;
   justify-content: space-between;
 }
-.container .main .faq-menu ul li {
+.container .faq-menu ul li {
   display: flex;
   flex-direction: column;
   padding: 5px;
   text-align: center;
   cursor: pointer;
 }
-.container .main .faq-menu ul li label {
+.container .faq-menu ul li label {
   cursor: pointer;
 }
-.container .main .faq-menu ul li label span {
+.container .faq-menu ul li label span {
   padding: 5px 10px;
   width: fit-content;
   border-radius: 10px;
   box-shadow: 0 0 5px gray;
 }
-.container .main .faq-menu ul li img {
+.container .faq-menu ul li img {
   width: 100%;
   height: 100px;
   border-radius: 10px;
   filter: grayscale(1);
   margin-bottom: 10px;
 }
-.container .main .faq-menu ul li input:checked + label img {
+.container .faq-menu ul li input:checked + label img {
   filter: none;
 }
-.container .main .faq-menu ul li input:checked + label span {
+.container .faq-menu ul li input:checked + label span {
   background: rgba(3, 185, 37, 0.2);
   transition: 0.3s ease-in-out;
 }
-.container .main .faq-menu ul li input {
+.container .faq-menu ul li input {
   display: none;
 }
-.container .main .faq-content {
+.container .faq-content {
   padding: 40px;
 }
-.container .main .faq-content .group-title {
+.container .faq-content .group-title {
   font-size: 20px;
   color: #1e6262;
   font-weight: bold;
   padding: 10px 0px;
 }
-.container .main .faq-item .title {
+.container .faq-item .title {
   font-size: 18px;
   padding: 10px 0px;
   margin-bottom: 10px;
   cursor: pointer;
 }
-.container .main .faq-item .title img {
+.container .faq-item .title img {
   transform: rotate(-90deg);
   height: 12px;
   width: 12px;
   margin-right: 10px;
 }
-.container .main .faq-item.active .content {
+.container .faq-item.active .content {
   visibility: visible;
   opacity: 1;
   display: block;
   transition: 0.5s ease-in-out;
 }
-.container .main .faq-item.active .title img {
+.container .faq-item.active .title img {
   transform: rotate(0deg);
 }
-.container .main .faq-item .content {
+.container .faq-item .content {
   visibility: hidden;
   opacity: 0;
   display: none;

@@ -55,29 +55,29 @@ a {
   padding-top: 10px;
   cursor: pointer;
 }
-.container .sidebar .menu-list li {
+.container .sidebar .menu-list a li {
   color: rgba(0, 0, 0, 0.54);
   padding: 20px;
   border-bottom: 1px solid #e0d9d9;
   display: flex;
   align-items: center;
 }
-.container .sidebar .menu-list li:first-of-type {
+.container .sidebar .menu-list a li:first-of-type {
   border-top: 1px solid #e0d9d9;
 }
-.container .sidebar .menu-list li:hover {
+.container .sidebar .menu-list a li:hover {
   cursor: pointer;
   background: #d1d0d0;
 }
-.container .sidebar .menu-list li:hover label {
+.container .sidebar .menu-list a li:hover label {
   cursor: pointer;
 }
-.container .sidebar .menu-list li .icon {
+.container .sidebar .menu-list a li .icon {
   flex: 1;
   width: 25px;
   height: 25px;
 }
-.container .sidebar .menu-list li .menu-info {
+.container .sidebar .menu-list a li .menu-info {
   flex: 3;
   display: flex;
   justify-content: space-between;
@@ -100,13 +100,21 @@ a {
 .container-wrapper .left .menu-item a {
   color: rgba(0, 0, 0, 0.54);
 }
-.container-wrapper .left .menu-item.active a {
+.container-wrapper .left .menu-item a:hover {
+  color: #2db84c;
+}
+.container-wrapper .left .menu-item.active p {
   color: #2db84c;
 }
 .container-wrapper .left .menu-item:hover {
   cursor: pointer;
   transition: 0.5s ease-in-out;
   color: #444343;
+}
+.container-wrapper .left .menu-item p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container-wrapper .right {
   margin-left: 100px;
@@ -233,81 +241,81 @@ a {
 .container-wrapper .right-wrapper .header-right .method .btn-add-transaction:hover {
   box-shadow: 0 0 4px gray;
 }
-.container .main {
+.container .report {
   color: rgba(0, 0, 0, 0.54);
   padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.container .main .income {
+.container .report .income {
   color: #039be5;
 }
-.container .main .expense {
+.container .report .expense {
   color: red;
 }
-.container .main-left {
+.container .report-left {
   width: 40%;
   background: white;
   box-shadow: 0 0 5px gray;
   margin-right: 20px;
 }
-.container .main-left .balance {
+.container .report-left .balance {
   display: flex;
   flex: 1 1;
   justify-content: space-around;
   border-bottom: 1px solid #dadada;
 }
-.container .main-left .balance-amount {
+.container .report-left .balance-amount {
   font-weight: bold;
   font-size: 16px;
   padding-top: 10px;
 }
-.container .main-left .balance-start, .container .main-left .balance-end {
+.container .report-left .balance-start, .container .report-left .balance-end {
   width: 100%;
   padding: 30px 0px;
   text-align: center;
 }
-.container .main-left .chart-header {
+.container .report-left .chart-header {
   padding: 15px 0px;
 }
-.container .main-left .chart-title {
+.container .report-left .chart-title {
   text-align: center;
 }
-.container .main-left .chart-title .title-bar {
+.container .report-left .chart-title .title-bar {
   font-size: 14px;
 }
-.container .main-left .chart-title .amount-bar {
+.container .report-left .chart-title .amount-bar {
   font-size: 22px;
   font-weight: bold;
 }
-.container .main-left .chart-body {
+.container .report-left .chart-body {
   text-align: center;
 }
-.container .main-left .chart-body-img {
+.container .report-left .chart-body-img {
   width: 80%;
   height: 250px;
 }
-.container .main-left .donut-chart {
+.container .report-left .donut-chart {
   display: flex;
   flex: 1 1;
 }
-.container .main-left .donut-chart .income, .container .main-left .donut-chart .outcome {
+.container .report-left .donut-chart .income, .container .report-left .donut-chart .outcome {
   cursor: pointer;
   width: 100%;
   text-align: center;
 }
-.container .main-left .donut-chart .income img, .container .main-left .donut-chart .outcome img {
+.container .report-left .donut-chart .income img, .container .report-left .donut-chart .outcome img {
   width: 80%;
   height: 200px;
 }
-.container .main-left .donut-chart .income:hover, .container .main-left .donut-chart .outcome:hover {
+.container .report-left .donut-chart .income:hover, .container .report-left .donut-chart .outcome:hover {
   box-shadow: 0 0 5px gray;
 }
-.container .main-left .debt-loan ul {
+.container .report-left .debt-loan ul {
   list-style: none;
 }
-.container .main-left .debt-loan ul li {
+.container .report-left .debt-loan ul li {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #e2dede;
@@ -315,20 +323,20 @@ a {
   cursor: pointer;
   align-items: center;
 }
-.container .main-left .debt-loan ul li .right-chevron {
+.container .report-left .debt-loan ul li .right-chevron {
   height: 15px;
   width: 15px;
 }
-.container .main-left .debt-loan ul li span {
+.container .report-left .debt-loan ul li span {
   display: flex;
 }
-.container .main-left .debt-loan ul li span img {
+.container .report-left .debt-loan ul li span img {
   margin-left: 20px;
 }
-.container .main-left .debt-loan ul li:hover {
+.container .report-left .debt-loan ul li:hover {
   background: #ece9e9;
 }
-.container .main-right, .container .main-detail {
+.container .report-right, .container .report-detail {
   width: 55%;
   background: white;
   box-shadow: 0 0 5px gray;
@@ -337,28 +345,28 @@ a {
   z-index: 500;
   overflow-x: hidden;
 }
-.container .main-right .header, .container .main-detail .header {
+.container .report-right .header, .container .report-detail .header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e0dbdb;
   padding: 0px 20px;
 }
-.container .main-right .header-left, .container .main-detail .header-left {
+.container .report-right .header-left, .container .report-detail .header-left {
   padding: 10px 0px;
   display: flex;
   align-items: center;
 }
-.container .main-right .header-left p, .container .main-detail .header-left p {
+.container .report-right .header-left p, .container .report-detail .header-left p {
   margin-left: 20px;
   font-weight: bold;
   font-size: 20px;
   color: #424040;
 }
-.container .main-right .header-right, .container .main-detail .header-right {
+.container .report-right .header-right, .container .report-detail .header-right {
   display: flex;
   justify-content: center;
 }
-.container .main-right .header-right .display-type, .container .main-detail .header-right .display-type {
+.container .report-right .header-right .display-type, .container .report-detail .header-right .display-type {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -367,39 +375,39 @@ a {
   box-sizing: border-box;
   border-bottom: 2px solid transparent;
 }
-.container .main-right .header-right .display-type img, .container .main-detail .header-right .display-type img {
+.container .report-right .header-right .display-type img, .container .report-detail .header-right .display-type img {
   height: 25px;
   width: 25px;
 }
-.container .main-right .header-right .display-type.active, .container .main-detail .header-right .display-type.active {
+.container .report-right .header-right .display-type.active, .container .report-detail .header-right .display-type.active {
   border-bottom: 2px solid #1aa333;
 }
-.container .main-right .header-right .display-type:hover, .container .main-detail .header-right .display-type:hover {
+.container .report-right .header-right .display-type:hover, .container .report-detail .header-right .display-type:hover {
   border-bottom: 2px solid #1aa333;
 }
-.container .main-right .chart-content, .container .main-detail .chart-content {
+.container .report-right .chart-content, .container .report-detail .chart-content {
   display: flex;
   flex: 2 1;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #e2dfdf;
 }
-.container .main-right .chart-content .chart, .container .main-detail .chart-content .chart {
+.container .report-right .chart-content .chart, .container .report-detail .chart-content .chart {
   padding: 30px 20px;
 }
-.container .main-right .chart-content .chart img, .container .main-detail .chart-content .chart img {
+.container .report-right .chart-content .chart img, .container .report-detail .chart-content .chart img {
   height: 100%;
   width: 100%;
 }
-.container .main-right .chart-content .amount, .container .main-detail .chart-content .amount {
+.container .report-right .chart-content .amount, .container .report-detail .chart-content .amount {
   font-size: 22px;
   font-weight: bold;
   color: #e51c23;
 }
-.container .main-right .category-list ul, .container .main-detail .category-list ul {
+.container .report-right .category-list ul, .container .report-detail .category-list ul {
   list-style: none;
 }
-.container .main-right .category-list ul .category-item, .container .main-detail .category-list ul .category-item {
+.container .report-right .category-list ul .category-item, .container .report-detail .category-list ul .category-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -408,27 +416,27 @@ a {
   cursor: pointer;
   padding: 20px 40px;
 }
-.container .main-right .category-list ul .category-item label, .container .main-detail .category-list ul .category-item label {
+.container .report-right .category-list ul .category-item label, .container .report-detail .category-list ul .category-item label {
   cursor: pointer;
 }
-.container .main-right .category-list ul .category-item:hover, .container .main-detail .category-list ul .category-item:hover {
+.container .report-right .category-list ul .category-item:hover, .container .report-detail .category-list ul .category-item:hover {
   background: rgba(207, 207, 207, 0.4);
 }
-.container .main-right .category-list ul .category-item span, .container .main-detail .category-list ul .category-item span {
+.container .report-right .category-list ul .category-item span, .container .report-detail .category-list ul .category-item span {
   display: flex;
   align-items: center;
 }
-.container .main-right .category-list ul .category-item .item-left img, .container .main-detail .category-list ul .category-item .item-left img {
+.container .report-right .category-list ul .category-item .item-left img, .container .report-detail .category-list ul .category-item .item-left img {
   margin-right: 20px;
   height: 40px;
   width: 40px;
 }
-.container .main-right .category-list ul .category-item .item-right img, .container .main-detail .category-list ul .category-item .item-right img {
+.container .report-right .category-list ul .category-item .item-right img, .container .report-detail .category-list ul .category-item .item-right img {
   margin-left: 20px;
   height: 20px;
   width: 20px;
 }
-.container .main-detail {
+.container .report-detail {
   position: absolute;
   transform: translateX(200%);
   height: 100%;
@@ -438,13 +446,13 @@ a {
   top: 0;
   transition: 0.5s ease-in-out;
 }
-.container .main-detail.active {
+.container .report-detail.active {
   display: block;
   visibility: visible;
   transform: translateX(0%);
   transition: 0.5s ease-in-out;
 }
-.container .main-detail #back-icon {
+.container .report-detail #back-icon {
   cursor: pointer;
 }
 

@@ -180,10 +180,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main">
+                    <div class="report">
 
 
-                        <div class="main-left">
+                        <div class="report-left">
                             <div class="balance">
                                 <div class="balance-start">
                                     <div class="balance-title">Số dư đầu</div>
@@ -247,7 +247,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="main-right">
+                        <div class="report-right">
                             <div class="header">
                                 <div class="header-left">
                                     <img src="./assets/close.svg" alt="close">
@@ -310,7 +310,7 @@
                                 </div>
                             </div>
                             <!-- Detail -->
-                            <div class="main-detail">
+                            <div class="report-detail">
                                 <div class="header">
                                     <div class="header-left">
                                         <img src="./assets/back.svg" alt="close" id="back-icon">
@@ -406,7 +406,7 @@
             });
 
             // Xử lí khi view detail trong báo cáo
-            const mainDetail = document.querySelector('.main-detail');
+            const mainDetail = document.querySelector('.report-detail');
             const categoryItems = document.querySelectorAll('.category-item');
             categoryItems.forEach(category => {
                 category.addEventListener('click', function () {

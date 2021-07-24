@@ -55,29 +55,29 @@ a {
   padding-top: 10px;
   cursor: pointer;
 }
-.container .sidebar .menu-list li {
+.container .sidebar .menu-list a li {
   color: rgba(0, 0, 0, 0.54);
   padding: 20px;
   border-bottom: 1px solid #e0d9d9;
   display: flex;
   align-items: center;
 }
-.container .sidebar .menu-list li:first-of-type {
+.container .sidebar .menu-list a li:first-of-type {
   border-top: 1px solid #e0d9d9;
 }
-.container .sidebar .menu-list li:hover {
+.container .sidebar .menu-list a li:hover {
   cursor: pointer;
   background: #d1d0d0;
 }
-.container .sidebar .menu-list li:hover label {
+.container .sidebar .menu-list a li:hover label {
   cursor: pointer;
 }
-.container .sidebar .menu-list li .icon {
+.container .sidebar .menu-list a li .icon {
   flex: 1;
   width: 25px;
   height: 25px;
 }
-.container .sidebar .menu-list li .menu-info {
+.container .sidebar .menu-list a li .menu-info {
   flex: 3;
   display: flex;
   justify-content: space-between;
@@ -103,7 +103,7 @@ a {
 .container-wrapper .left .menu-item a:hover {
   color: #2db84c;
 }
-.container-wrapper .left .menu-item.active a {
+.container-wrapper .left .menu-item.active p {
   color: #2db84c;
 }
 .container-wrapper .left .menu-item:hover {
@@ -241,23 +241,23 @@ a {
 .container-wrapper .right-wrapper .header-right .method .btn-add-transaction:hover {
   box-shadow: 0 0 4px gray;
 }
-.container .main {
+.container .bank {
   width: 100%;
   background: white;
   margin: 20px;
   padding: 20px 40px;
 }
-.container .main .bank-link {
+.container .bank .bank-link {
   margin: 20px 40px;
 }
-.container .main .bank-link input {
+.container .bank .bank-link input {
   width: 100%;
   font-size: 16px;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #dad7d7;
 }
-.container .main .bank-item {
+.container .bank .bank-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,20 +266,20 @@ a {
   box-shadow: 0 0 3px gray;
   margin: 0px 5px;
 }
-.container .main .bank-item img {
+.container .bank .bank-item img {
   height: 65px;
   width: 65px;
 }
-.container .main .bank-item .country {
+.container .bank .bank-item .country {
   color: rgba(0, 0, 0, 0.54);
 }
-.container .main .bank-list {
+.container .bank .bank-list {
   display: flex;
   overflow-x: scroll;
 }
 
 @media only screen and (max-width: 767px) {
-  .main .bank-list {
+  .bank .bank-list {
     display: grid;
     justify-content: flex-start;
     grid-auto-columns: 400px;
@@ -295,11 +295,11 @@ a {
     scroll-padding: 1rem;
     grid-template-columns: unset;
   }
-  .main .bank-list::-webkit-scrollbar {
+  .bank .bank-list::-webkit-scrollbar {
     display: none;
     width: 0;
   }
-  .main .bank-list > * {
+  .bank .bank-list > * {
     scroll-snap-align: start;
     width: 100%;
   }

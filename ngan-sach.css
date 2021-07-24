@@ -55,29 +55,29 @@ a {
   padding-top: 10px;
   cursor: pointer;
 }
-.container .sidebar .menu-list li {
+.container .sidebar .menu-list a li {
   color: rgba(0, 0, 0, 0.54);
   padding: 20px;
   border-bottom: 1px solid #e0d9d9;
   display: flex;
   align-items: center;
 }
-.container .sidebar .menu-list li:first-of-type {
+.container .sidebar .menu-list a li:first-of-type {
   border-top: 1px solid #e0d9d9;
 }
-.container .sidebar .menu-list li:hover {
+.container .sidebar .menu-list a li:hover {
   cursor: pointer;
   background: #d1d0d0;
 }
-.container .sidebar .menu-list li:hover label {
+.container .sidebar .menu-list a li:hover label {
   cursor: pointer;
 }
-.container .sidebar .menu-list li .icon {
+.container .sidebar .menu-list a li .icon {
   flex: 1;
   width: 25px;
   height: 25px;
 }
-.container .sidebar .menu-list li .menu-info {
+.container .sidebar .menu-list a li .menu-info {
   flex: 3;
   display: flex;
   justify-content: space-between;
@@ -103,7 +103,7 @@ a {
 .container-wrapper .left .menu-item a:hover {
   color: #2db84c;
 }
-.container-wrapper .left .menu-item.active a {
+.container-wrapper .left .menu-item.active p {
   color: #2db84c;
 }
 .container-wrapper .left .menu-item:hover {
@@ -241,40 +241,40 @@ a {
 .container-wrapper .right-wrapper .header-right .method .btn-add-transaction:hover {
   box-shadow: 0 0 4px gray;
 }
-.container .main {
+.container .budget {
   color: rgba(0, 0, 0, 0.54);
   padding: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.container .main .income {
+.container .budget .income {
   color: #039be5;
 }
-.container .main .expense {
+.container .budget .expense {
   color: red;
 }
-.container .main-left {
+.container .budget-left {
   width: 40%;
   background: white;
   box-shadow: 0 0 5px gray;
   margin-right: 20px;
 }
-.container .main-left .menu-tabs {
+.container .budget-left .menu-tabs {
   padding-top: 10px;
   border-bottom: 1px solid #dad7d7;
 }
-.container .main-left .menu-tabs .menu-tab-item {
+.container .budget-left .menu-tabs .menu-tab-item {
   display: inline-block;
   padding: 15px 20px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.container .main-left .menu-tabs .menu-tab-item.active {
+.container .budget-left .menu-tabs .menu-tab-item.active {
   border-bottom: 2px solid #2db84c;
   color: #2db84c;
 }
-.container .main .buget-date {
+.container .budget .buget-date {
   border-bottom: 1px solid #dfdbdb;
   display: flex;
   justify-content: space-between;
@@ -282,10 +282,10 @@ a {
   font-size: 12px !important;
   color: rgba(0, 0, 0, 0.54);
 }
-.container .main .buget-date .date-amount {
+.container .budget .buget-date .date-amount {
   text-align: right;
 }
-.container .main .buget-content {
+.container .budget .buget-content {
   padding: 15px 10px;
   display: flex;
   align-items: center;
@@ -294,30 +294,30 @@ a {
   background: rgba(17, 168, 50, 0.08);
   cursor: pointer;
 }
-.container .main .buget-content:hover {
+.container .budget .buget-content:hover {
   background: rgba(17, 168, 50, 0.2);
   transition: 0.3s ease-in-out;
 }
-.container .main .buget-content .content-body {
+.container .budget .buget-content .content-body {
   width: 100%;
 }
-.container .main .buget-content .content-image {
+.container .budget .buget-content .content-image {
   margin-right: 20px;
 }
-.container .main .buget-content .content-title {
+.container .budget .buget-content .content-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: right;
 }
-.container .main .buget-content .content-time-line .time-line {
+.container .budget .buget-content .content-time-line .time-line {
   width: 100%;
   height: 5px;
   border-radius: 5px;
   background: #dbd8d8;
 }
-.container .main .buget-content .content-time-line .today {
+.container .budget .buget-content .content-time-line .today {
   background: gray;
   width: fit-content;
   padding: 3px 5px;
@@ -326,7 +326,7 @@ a {
   margin-left: 50%;
   margin-top: 5px;
 }
-.container .main .add-more {
+.container .budget .add-more {
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -335,7 +335,7 @@ a {
   display: block;
   cursor: pointer;
 }
-.container .main-right {
+.container .budget-right {
   width: 55%;
   background: white;
   box-shadow: 0 0 5px gray;
@@ -344,87 +344,87 @@ a {
   z-index: 500;
   overflow-x: hidden;
 }
-.container .main-right .header {
+.container .budget-right .header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e0dbdb;
   padding: 0px 20px;
 }
-.container .main-right .header-left {
+.container .budget-right .header-left {
   padding: 10px 0px;
   display: flex;
   align-items: center;
 }
-.container .main-right .header-left p {
+.container .budget-right .header-left p {
   margin-left: 20px;
   font-weight: bold;
   font-size: 20px;
   color: #424040;
 }
-.container .main-right .header-right {
+.container .budget-right .header-right {
   display: flex;
   justify-content: center;
 }
-.container .main-right .header-right .button-method {
+.container .budget-right .header-right .button-method {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.container .main-right .header-right .button-method span {
+.container .budget-right .header-right .button-method span {
   padding: 10px 25px;
   font-size: 16px;
   font-weight: bold;
   margin-right: 5px;
 }
-.container .main-right .header-right .button-method .btn {
+.container .budget-right .header-right .button-method .btn {
   border-radius: 5px;
 }
-.container .main-right .header-right .button-method .btn-delete {
+.container .budget-right .header-right .button-method .btn-delete {
   color: #f25a5a;
 }
-.container .main-right .header-right .button-method .btn-delete:hover {
+.container .budget-right .header-right .button-method .btn-delete:hover {
   background: rgba(240, 55, 55, 0.3);
 }
-.container .main-right .header-right .button-method .btn-edit {
+.container .budget-right .header-right .button-method .btn-edit {
   color: #2db84c;
 }
-.container .main-right .header-right .button-method .btn-edit:hover {
+.container .budget-right .header-right .button-method .btn-edit:hover {
   background: rgba(45, 184, 76, 0.3);
 }
-.container .main-right .detail-content {
+.container .budget-right .detail-content {
   padding: 20px;
   display: flex;
 }
-.container .main-right .detail-icon {
+.container .budget-right .detail-icon {
   padding: 20px;
 }
-.container .main-right .detail-info .bugdet-name {
+.container .budget-right .detail-info .bugdet-name {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.87);
   line-height: 32px;
   font-weight: bold;
 }
-.container .main-right .detail-info .name-account {
+.container .budget-right .detail-info .name-account {
   color: rgba(0, 0, 0, 0.87);
   font-size: 14px;
   line-height: 20px;
 }
-.container .main-right .detail-info .text-small {
+.container .budget-right .detail-info .text-small {
   color: rgba(0, 0, 0, 0.54);
   font-size: 12px;
   line-height: 14px;
 }
-.container .main-right .detail-info .total-amount {
+.container .budget-right .detail-info .total-amount {
   color: rgba(0, 0, 0, 0.87);
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 16px;
 }
-.container .main-right .detail-chart img {
+.container .budget-right .detail-chart img {
   width: 100%;
   height: 250px;
 }
-.container .main-right .view-more {
+.container .budget-right .view-more {
   color: #2db84c;
   font-size: 14px;
   font-weight: bold;
@@ -436,14 +436,14 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  .container .main {
+  .container .budget {
     display: block;
   }
-  .container .main-left {
+  .container .budget-left {
     width: 100%;
     margin-bottom: 20px;
   }
-  .container .main-right {
+  .container .budget-right {
     width: 100%;
   }
 }

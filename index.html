@@ -180,6 +180,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Main -->
                     <div class="main">
                         <div class="main-left active">
                             <ul class="date-range-wrapper">
@@ -339,13 +340,14 @@
             })
 
 
-            // // Xử lí khi click vào xem danh sách ví (ẩn khi click ra ngoài, hiện khi click vào tên)
             window.addEventListener('click', function(e){  
-                if (e.target == document.querySelector('.wallet-name') || e.target == document.querySelector('.wallet-name img')) {
-                    document.getElementById('wallets').classList.add('active');
-                } else {
-                    document.getElementById('wallets').classList.remove('active');
-                }
+                document.getElementById('wallets').classList.remove('active');
+            });
+
+            // Mở khi click wallet
+            document.querySelector('.wallet-name').addEventListener('click', function(e) {
+                document.getElementById('wallets').classList.add('active');
+                e.stopPropagation();
             });
 
             // Xử lí hiển thị transaction detail
@@ -360,10 +362,12 @@
                 });
             })
 
-            closeDetail.addEventListener('click', function(e) {
-                mainRight.classList.remove('active');
-                mainLeft.classList.remove('active');
-            })
+            if (closeDetail) {
+                closeDetail.addEventListener('click', function(e) {
+                    mainRight.classList.remove('active');
+                    mainLeft.classList.remove('active');
+                })
+            }
         })
     </script>
 </body>

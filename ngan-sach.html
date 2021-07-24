@@ -180,8 +180,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main">
-                        <div class="main-left">
+                    <!-- Main -->
+                    <div class="budget">
+                        <div class="budget-left">
                             <div class="menu-tabs">
                                 <div class="menu-tab-item active">
                                     Đang áp dụng
@@ -274,7 +275,7 @@
                         </div>
 
 
-                        <div class="main-right">
+                        <div class="budget-right">
                             <div class="header">
                                 <div class="header-left">
                                     <img src="./assets/close.svg" alt="close">
@@ -364,21 +365,6 @@
                 } else {
                     document.getElementById('wallets').classList.remove('active');
                 }
-            });
-
-            // Xử lí khi view detail trong báo cáo
-            const mainDetail = document.querySelector('.main-detail');
-            const categoryItems = document.querySelectorAll('.category-item');
-            categoryItems.forEach(category => {
-                category.addEventListener('click', function () {
-                    mainDetail.classList.add('active');
-                })
-            })
-
-            //  Đóng lại khi click button back
-            const backIcon = document.querySelector('#back-icon');
-            backIcon.addEventListener('click', function () {
-                mainDetail.classList.remove('active');
             });
         })
     </script>

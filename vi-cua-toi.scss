@@ -293,7 +293,7 @@ a {
     }
 
     /* main */
-    .main {
+    .my-wallet {
         color: rgba(0,0,0,.54);
         padding: 25px;
         display: flex;
@@ -488,7 +488,7 @@ a {
 
 @media only screen and (max-width: 767px) {
     .container {
-        .main {
+        .my-wallet {
             display: block;
             &-left {
                 width: 100%;

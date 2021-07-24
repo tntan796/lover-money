@@ -55,29 +55,29 @@ a {
   padding-top: 10px;
   cursor: pointer;
 }
-.container .sidebar .menu-list li {
+.container .sidebar .menu-list a li {
   color: rgba(0, 0, 0, 0.54);
   padding: 20px;
   border-bottom: 1px solid #e0d9d9;
   display: flex;
   align-items: center;
 }
-.container .sidebar .menu-list li:first-of-type {
+.container .sidebar .menu-list a li:first-of-type {
   border-top: 1px solid #e0d9d9;
 }
-.container .sidebar .menu-list li:hover {
+.container .sidebar .menu-list a li:hover {
   cursor: pointer;
   background: #d1d0d0;
 }
-.container .sidebar .menu-list li:hover label {
+.container .sidebar .menu-list a li:hover label {
   cursor: pointer;
 }
-.container .sidebar .menu-list li .icon {
+.container .sidebar .menu-list a li .icon {
   flex: 1;
   width: 25px;
   height: 25px;
 }
-.container .sidebar .menu-list li .menu-info {
+.container .sidebar .menu-list a li .menu-info {
   flex: 3;
   display: flex;
   justify-content: space-between;
@@ -103,7 +103,7 @@ a {
 .container-wrapper .left .menu-item a:hover {
   color: #2db84c;
 }
-.container-wrapper .left .menu-item.active a {
+.container-wrapper .left .menu-item.active p {
   color: #2db84c;
 }
 .container-wrapper .left .menu-item:hover {
@@ -241,25 +241,25 @@ a {
 .container-wrapper .right-wrapper .header-right .method .btn-add-transaction:hover {
   box-shadow: 0 0 4px gray;
 }
-.container .main {
+.container .manage-account {
   max-width: 600px;
   background: white;
   margin: 20px auto;
 }
-.container .main-header {
+.container .manage-account-header {
   padding: 20px;
   display: flex;
   flex: 1 1;
   align-items: center;
   justify-content: space-between;
 }
-.container .main-header h2 {
+.container .manage-account-header h2 {
   font-size: 20px;
 }
-.container .main-header .icon-close {
+.container .manage-account-header .icon-close {
   cursor: pointer;
 }
-.container .main .btn-logout {
+.container .manage-account .btn-logout {
   color: #2db84c;
   font-weight: bold;
   text-transform: uppercase;
@@ -267,10 +267,10 @@ a {
   padding: 10px 20px;
   border-radius: 5px;
 }
-.container .main .btn-logout:hover {
+.container .manage-account .btn-logout:hover {
   background: rgba(17, 209, 58, 0.2);
 }
-.container .main-account {
+.container .manage-account-account {
   display: flex;
   flex: 1 1;
   justify-content: space-around;
@@ -278,29 +278,29 @@ a {
   padding: 30px 0px;
   border-top: 1px solid #ccc7c7;
 }
-.container .main-account img {
+.container .manage-account-account img {
   height: 80px;
   width: 80px;
 }
-.container .main-upgrade {
+.container .manage-account-upgrade {
   position: relative;
   text-align: center;
 }
-.container .main-upgrade .background {
+.container .manage-account-upgrade .background {
   height: 150px;
   background: #f07700;
 }
-.container .main-upgrade .content {
+.container .manage-account-upgrade .content {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-.container .main-upgrade .content label {
+.container .manage-account-upgrade .content label {
   color: white;
   font-weight: bold;
 }
-.container .main-upgrade .content .btn-upgrade {
+.container .manage-account-upgrade .content .btn-upgrade {
   padding: 10px 20px;
   border: none;
   box-shadow: 0 0 5px #5a5a5a;
@@ -310,24 +310,24 @@ a {
   cursor: pointer;
   font-weight: bold;
 }
-.container .main .devices {
+.container .manage-account .devices {
   padding: 20px;
 }
-.container .main .devices .title {
+.container .manage-account .devices .title {
   color: rgba(0, 0, 0, 0.54);
   font-size: 16px;
 }
-.container .main .devices ul {
+.container .manage-account .devices ul {
   list-style: none;
 }
-.container .main .devices ul li {
+.container .manage-account .devices ul li {
   padding: 10px 0px;
   display: flex;
   flex: 1 auto;
   align-items: center;
   cursor: pointer;
 }
-.container .main .devices ul li .device-info {
+.container .manage-account .devices ul li .device-info {
   margin-left: 20px;
   padding: 10px 0px;
   border-bottom: 1px solid #dad7d7;
@@ -336,15 +336,15 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.container .main .devices ul li:hover {
+.container .manage-account .devices ul li:hover {
   background: rgba(4, 221, 4, 0.2);
 }
-.container .main .remove-account {
+.container .manage-account .remove-account {
   padding: 20px;
   cursor: pointer;
   text-align: right;
 }
-.container .main .remove-account:hover {
+.container .manage-account .remove-account:hover {
   color: #5a5a5a;
 }
 
